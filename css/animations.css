@@ -1,0 +1,157 @@
+.imagebox-item,
+.iconbox-item {
+  margin-bottom: 30px;
+}
+/* Imagebox Style1 */
+.imagebox.style1 {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.imagebox.style1 .imagebox-title {
+  padding: 10px 80px 11px 20px;
+  background: rgba(65, 84, 100, 0.85);
+  min-height: 45px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.imagebox.style1:hover .imagebox-title {
+  /* visibility: visible;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%); */
+
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.imagebox.style1 .imagebox-title h3 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  line-height: 1.4;
+}
+.imagebox.style1 .imagebox-title h3 > span {
+  color: #ffffff;
+}
+
+.imagebox.style1 .imagebox-title h3:after {
+  position: absolute;
+  top: 48%;
+  right: -53px;
+  color: #ffffff;
+  font-size: 16px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.imagebox.style1 .imagebox-title h3 a {
+  color: #ffffff;
+}
+
+.imagebox.style1 .imagebox-content {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  background: rgba(65, 84, 100, 0.85);
+  font-size: 14px;
+  padding: 30px 30px 40px;
+  transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .imagebox.style1:hover .imagebox-content {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+       -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+           transition: all 0.3s ease-in-out;
+} */
+
+.imagebox.style1 .imagebox-content .imagebox-desc {
+  color: #ffffff;
+}
+
+.imagebox.style1 .imagebox-content .imagebox-button {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.imagebox.style1 .imagebox-content .imagebox-button a {
+  color: #ffffff;
+  margin-top: 30px;
+  background: rgba(24, 186, 96, 0.8);
+  padding: 13px 52px 13px 30px;
+  display: inline-block;
+  position: relative;
+  line-height: 24px;
+  webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.imagebox.style1 .imagebox-content .imagebox-button a:before {
+  content: "\f054";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.imagebox.style1 .imagebox-content .imagebox-button a:hover:before {
+  color: #222222;
+}
+
+.imagebox.style1 .imagebox-content .imagebox-button a:hover {
+  color: #222222;
+  background-color: #ffffff;
+}
