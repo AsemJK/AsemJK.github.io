@@ -230,4 +230,5 @@ h1,h2,h3,h4,h5,a{
   
   .main{
     flex-grow: 1;
+    margin-inline: 3%;
   }
