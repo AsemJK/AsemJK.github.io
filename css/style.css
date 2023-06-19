@@ -1,5 +1,6 @@
 :root {
     --primary: #7e57c2;
+    --dalem: #6f27a0;
     --body-bg: #eee;
     --header-bg: #fff;
     --block-bg: #fff;
@@ -19,7 +20,7 @@
     background: var(--body-bg);
     height: 100vh;
   }
-h1,h2,h3,h4,h5,a{
+h1,h2,h3,h4,h5,a,pre{
   font-family: 'Noto Sans Arabic', Roboto, Arial, Verdana, sans-serif;
 }
   body{
@@ -173,7 +174,10 @@ h1,h2,h3,h4,h5,a{
   .tags > span.strong {
     background: rgba(126, 87, 194, 0.7);
   }
-  
+  .tags > span.strong.x1 {
+    background: var(--dalem);
+    color: #fff;
+  }
   .tags > span.strong.x2 {
     background: var(--primary);
   }
@@ -231,4 +235,7 @@ h1,h2,h3,h4,h5,a{
   .main{
     flex-grow: 1;
     margin-inline: 3%;
+  }
+  .card-text{
+
   }
