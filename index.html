@@ -60,6 +60,83 @@
 
         <div class="list-group-item">
           <div class="list-group-item-headig">
+            09/07/2023 : Jeddah, Ksa
+          </div>
+          <div class="card" dir="ltr">
+            <div class="card-body">
+              <h5 class="card-title">SQL Server - Optimization Tips</h5>
+              <pre class="card-text">
+                  If you have a query search in column 
+
+                  make index and that column should be first order in index
+
+                  for example :
+                  we have a table "tbl_Person" contains (firstName,lastName,state,mobile,...)
+
+                  and we have this query :
+
+                  select * from tbl_Person where lastName = 'Asem';
+
+                  and we already have an index like this :
+
+                  Create Index IX_Name_Search on tbl_Person(firstName,lastName,state);
+
+                  in this case the search query will take more time because "lastName" is the second column in Index
+
+                  so the solution is to modify the index to be like this :
+                  
+                  Create Index IX_Name_Search on tbl_Person(lastName,firstName,state);
+
+                  Regards.
+              </pre>
+              <br>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card" dir="rtl">
+            <div class="card-body">
+              <h5>بالعربي</h5>
+              <h5 class="card-title ar-title">SQL Server نصائح لرفع كفاءة الإستعلامات </h5>
+              <pre class="card-text">
+                فرضا لدينا إستعلام يبحث في جدول ما عن إسم شخص
+
+                و معروف أن الإندكس هو أنجع الطرق لرفع كفاءة البحث
+
+                مثلا :
+                لدينا الجدول 
+                <pre dir="ltr">
+                  "tbl_Person" contains (firstName,lastName,state,mobile,...)
+                </pre>
+              و لدينا هذا الإستعلام 
+                <pre dir="ltr">
+                  select * from tbl_Person where lastName = 'Asem';
+                </pre>
+                و قمنا بعمل إندكس كما التالي :
+                
+                <pre dir="ltr">
+                  Create Index IX_Name_Search on tbl_Person(firstName,lastName,state);
+                </pre>
+                في هذه الحالة و عند عمل تحليل للإستعلام سوف نلاحظ وجود تأخير كبير بسبب أن
+                "lastName" 
+                هو العمود الثاني في ترتيب الإندكس
+
+                لذا فالحل لهذه المشكلة هو :
+                حذف الإندكس السابق و إعادة بناءه كما في الشكل
+                <pre dir="ltr">
+                  Create Index IX_Name_Search on tbl_Person(lastName,firstName,state);
+                </pre>
+
+                تحياتي ):
+              </pre>
+              <br>
+              <a href="#" class="btn btn-primary">إقرأ المزيد</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="list-group-item">
+          <div class="list-group-item-headig">
             19/06/2023 : Jeddah, Ksa
           </div>
           <div class="card" dir="ltr">
@@ -278,6 +355,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
